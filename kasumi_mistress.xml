@@ -18,4 +18,7 @@
 
   <!-- Kasumi Overlays -->
   <project path="vendor/kasumi/overlay" name="android_vendor_kasumi_overlay" remote="kasumi" />
+
+  <!-- Bandori Wallpapers Stub -->
+  <project path="packages/apps/BandoriWallpapersStub" name="android_packages_apps_BandoriWallpapersStub" remote="kasumi" />
 </manifest>
