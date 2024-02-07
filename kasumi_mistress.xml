@@ -1,0 +1,21 @@
+<manifest>
+  <remote name="kasumi"
+          fetch="https://github.com/Kasumi-Staging"
+          revision="kasumi-v3" />
+
+  <!-- Kasumi Extras -->
+  <project path="vendor/extra" name="android_vendor_extra" remote="kasumi">
+    <linkfile src="config.mk" dest="vendor/kasumi/config.mk" />
+  </project>
+
+  <!-- Kasumi GCGOP (You might wanna remove vendor/gcgop from your
+       device's manifest if you clone it from Kasumi repos or a fork of
+       it.) -->
+  <project path="vendor/kasumi/gcgop" name="android_vendor_kasumi_gcgop" remote="kasumi" />
+
+  <!-- Kasumi Tones -->
+  <project path="vendor/kasumi/tones" name="android_vendor_kasumi_tones" remote="kasumi" />
+
+  <!-- Kasumi Overlays -->
+  <project path="vendor/kasumi/overlay" name="android_vendor_kasumi_overlay" remote="kasumi" />
+</manifest>
