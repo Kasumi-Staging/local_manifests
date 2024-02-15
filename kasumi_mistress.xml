@@ -3,12 +3,15 @@
           fetch="https://github.com/Kasumi-Staging"
           revision="kasumi-v3" />
 
+  <!-- Remove some projects that will conflict with our replacements -->
+  <remove-project name="android_packages_apps_PixelBuildsWallpapers" />
+
   <!-- Kasumi Extras -->
   <project path="vendor/extra" name="android_vendor_extra" remote="kasumi">
     <linkfile src="config.mk" dest="vendor/kasumi/config.mk" />
   </project>
 
-  <!-- Kasumi GCGOP (You might wanna remove vendor/gcgop from your
+  <!-- Kasumi GCGOP (You might wanna remove vendor/(kasumi/)gcgop from your
        device's manifest if you clone it from Kasumi repos or a fork of
        it.) -->
   <project path="vendor/kasumi/gcgop" name="android_vendor_kasumi_gcgop" remote="kasumi" />
